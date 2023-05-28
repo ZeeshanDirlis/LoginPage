@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" 
+         version="2.5" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"> 
+         
+         <display-name>Login-Page</display-name>
+  
+   <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+   </welcome-file-list>
+   
+   <servlet>
+   <servlet-name>login</servlet-name>
+   <servlet-class>com.servlets.login</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   <servlet-name>login</servlet-name>
+   <url-pattern>/Login</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+   <servlet-name>register</servlet-name>
+   <servlet-class>com.servlets.register</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   <servlet-name>register</servlet-name>
+   <url-pattern>/Register</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+   <servlet-name>delete</servlet-name>
+   <servlet-class>com.servlets.delete</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   <servlet-name>delete</servlet-name>
+   <url-pattern>/Delete</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+   <servlet-name>update</servlet-name>
+   <servlet-class>com.servlets.update</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   <servlet-name>update</servlet-name>
+   <url-pattern>/Update</url-pattern>
+   </servlet-mapping>
+   
+   <filter>
+   <filter-name>filter</filter-name>
+   <filter-class>com.filters.filter</filter-class>
+   </filter>
+   <filter-mapping>
+   <filter-name>filter</filter-name>
+   <url-pattern>/Login</url-pattern>
+   </filter-mapping>
+   <filter-mapping>
+   <filter-name>filter</filter-name>
+   <url-pattern>/Delete</url-pattern>
+   </filter-mapping>
+    
+    <filter>
+    <filter-name>filter2</filter-name>
+    <filter-class>com.filters.filter2</filter-class>
+    </filter>
+    <filter-mapping>
+    <filter-name>filter2</filter-name>
+    <url-pattern>/Update</url-pattern>
+    </filter-mapping>
+         
+</web-app>

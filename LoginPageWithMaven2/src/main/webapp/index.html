@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page by Zee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h2 class="logo">ZEE</h2>
+        <nav class="navi">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <button class="login-popup">Login</button>
+        </nav>
+    </header>
+    
+    <!--Main Div -->
+    <div class="wrapper">
+
+        
+        <!--1 Login-->
+        <div class="form-box">
+            <span class="icon-close1"><ion-icon name="close-circle"></ion-icon></span>
+            <h2>Login</h2>
+                                                         <!-- id = "first" action="login" method="post" onsubmit="return legit1()"-->
+                <form action="Login" method="post" onsubmit="return legit1()"> 
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" name="eInput" id="email">
+                    <label for="input">Email</label>
+                    <br>
+                    <span class="e-mail"></span>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" name="pInput" id="password">
+                    <label for="input">Password</label>
+                    <br>
+                    <span class="pass-word"></span>
+                    </div>
+
+                <div class="remember-forgot">
+                
+                    <label for="input">
+                        <input type="checkbox" name="check" id="check1" value="checked">I agree to the terms and conditions
+                    </label>
+
+                    
+
+                </div>
+
+                <button class="login">Login</button>
+
+                <div class="login-register">
+                    <p class=>Don't have an Account ? <a href="#" class="register-link">Register</a> </p>
+                </div>
+                
+                <div class="login-update">
+                    <p class=>Forgot Password ? <a href="#" class="update-link">Update</a> </p>
+                </div>
+               
+                <div class="login-delete">
+                    <p class=>Delete Account ? <a href="#" class="delete-link">Delete</a> </p>
+                </div>
+                <br>
+                <h3>Rate this project</h3>
+                 <select name="rate" id="rate1">
+                    <option value="Select">Select a Tier</option>
+                    <option value="S">S+</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                 </select>
+            </form>
+        </div>
+
+        <!--2. Register-->
+        <div class="form-box-register">
+            <span class="icon-close2"><ion-icon name="close-circle"></ion-icon></span>
+            <h2>Register</h2>
+            <form action="Register" method="post" onsubmit="return legit2()">
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-add"></ion-icon></span>
+                    <input type="email" name="eInput2" id="username">
+                    <label for="username">Username</label>
+                    <br>
+                    <span class="e-mail2"></span>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" name="pInput2" id="password2">
+                    <label for="input">Password</label>
+                    <br>
+                    <span class="pass-word2"></span>
+                </div>
+
+                <div class="remember-forgot">
+                
+                    <label for="input">
+                        <input type="checkbox" name="check2" id="check2" value="checked">I agree to the terms and conditions
+                    </label>
+
+                    
+
+                </div>
+
+                <button class="login">Register</button>
+
+                <div class="login-register">
+                    <p class=>Already have an Account ? <a href="#" class="login-link">Login</a> </p>
+                </div>
+                
+            </form>
+        </div>
+
+        <!--3.Update-->
+        <div class="form-box-update">
+            <span class="icon-close3"><ion-icon name="close-circle"></ion-icon></span>
+            <h2>Update</h2>
+                                                         <!-- id = "first" action="login" method="post" onsubmit="return legit1()"-->
+                <form action="Update" method="post" onsubmit="return legit3()"> 
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" name="eInput" id="email3">
+                    <label for="input">Email</label>
+                    <br>
+                    <span class="e-mail3"></span>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" name="pInput" id="password3">
+                    <label for="input">New Password</label>
+                    <br>
+                    <span class="pass-word3"></span>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" name="pInput33" id="password33">
+                        <label for="input">Confirm Password</label>
+                        <br>
+                        <span class="pass-word33"></span>
+                        </div>
+                <div class="remember-forgot">
+                
+                    
+
+                    
+
+                </div>
+
+                <button class="login">Update</button>
+
+               
+            </form>
+        </div>
+
+        <!--4.Delete-->
+        <div class="form-box-delete">
+            <span class="icon-close4"><ion-icon name="close-circle"></ion-icon></span>
+            <h2>Delete</h2>
+                                                         <!-- id = "first" action="login" method="post" onsubmit="return legit1()"-->
+                <form action="Delete" method="post" onsubmit="return legit4()"> 
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" name="eInput" id="email4">
+                    <label for="input">Email</label>
+                    <br>
+                    <span class="e-mail4"></span>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" name="pInput" id="password4">
+                    <label for="input">Password</label>
+                    <br>
+                    <span class="pass-word4"></span>
+                    </div>
+
+                <div class="remember-forgot">
+                
+                   
+
+                    
+
+                </div>
+
+                <button class="login">Delete</button>
+
+                
+            </form>
+        </div>
+
+
+
+    </div>
+   
+
+    
+    <script src="index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <a href=""></a>
+    
+
+</body>
+</html>
